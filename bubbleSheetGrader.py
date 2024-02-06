@@ -176,6 +176,10 @@ for quesNum, answer in answers.items():
 
 percentage = correct * 5
 
+cv.putText(warpedImg, "{}% correct".format(percentage),
+           (1500, 200), cv.FONT_HERSHEY_SIMPLEX, 5, 1, 10)
+
+
 plt.figure(figsize=[15, 15])
 plt.imshow(warpedImg)
 plt.title("{}%".format(percentage))
